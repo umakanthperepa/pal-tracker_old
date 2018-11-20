@@ -25,11 +25,11 @@ repositories {
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web:$springBootVersion")
-<<<<<<< HEAD
+
+   testCompile("org.springframework.boot:spring-boot-starter-test:$springBootVersion")
+
 }
-=======
-    testCompile("org.springframework.boot:spring-boot-starter-test:$springBootVersion")
-}
+
 
 bootRun.environment([
      "WELCOME_MESSAGE": "hello",
@@ -38,4 +38,4 @@ bootRun.environment([
 test.environment([
      "WELCOME_MESSAGE": "Hello from test",
 ])
->>>>>>> 9b5f073... Add manifest file for deployment to PCF
+
